@@ -1,0 +1,72 @@
+  /*------ Default 1440x900 resolution-----*/
+body { margin: 0;
+  background:#fff url('images/bg.jpg') no-repeat center top fixed;
+-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+    font-size:100%;  }
+    
+::-webkit-scrollbar { width: 2pt; }
+::-webkit-scrollbar-track { background: transparent;}
+::-webkit-scrollbar-thumb { background-color: CadetBlue;}
+     
+#wrap { position: absolute; top: 10%; bottom: 10%; left: 0; right: 0; margin: auto; max-width: 75%; height: 80%; overflow:hidden;  padding: 2%; background: white; z-index: 1; }
+#container {max-width: 100%; height: 100%;   overflow-y:scroll; overflow-x: hidden; background: white; border: 0.10em solid CadetBlue ;  }
+ #header { max-width: 100%; height: 65%;  background:#fff url('images/banner.png') no-repeat center top; background-size: cover; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover;
+ overflow: hidden; margin: 0; position: relative; top: 0;}
+ #top { display: block; width:100%; background: transparent; text-align: center; position: absolute; bottom: 0;}
+ span.logo, span.subtitle {color: black; font-family: 'Raleway', Helvetica, sans-serif;  font-weight:lighter; text-transform: uppercase; }
+      span.logo { letter-spacing: 0.75em; font-size: 1.32em; }
+         span.subtitle { letter-spacing: 0.65em; font-size: 0.65em; }
+  #header h1, #header h2 { margin: 0; margin-bottom: 2%; }
+
+ul.navigate { list-style-type: none; margin: auto; margin-top: 10px; padding: 0; overflow: hidden; background: black; width: 50%;
+font-family: 'Raleway', Helvetica, sans-serif; font-weight: lighter; font-size: 0.7em; letter-spacing: 0.25em; }
+   .navigate li { display:inline; }
+      .navigate li a { display:inline-block; background: black; color: white; text-align: center;  padding: 3% 2%; text-decoration: none;
+                transition:All 0.5s ease-in-out;
+          -webkit-transition:All 0.5s ease-in-out;
+          -moz-transition:All 0.5s ease-in-out;
+           -o-transition:All 0.5s ease-in-out;  }
+         .navigate li a:hover { background: white; color: black; }
+         
+#content { padding: 2em; }
+#content p, #content blockquote, .portfolio, #content li { font-family: 'Open Sans', Helvetica, sans-serif; font-size: 0.95em; line-height: 1.75em; color: #383838; }  
+   #content h1, #content h2 { font-family:'Raleway', Helvetica, sans-serif; text-transform: uppercase; font-weight: lighter; }
+    #content h1 {color:CadetBlue; text-align: center; letter-spacing: 0.25em; font-size: 3em;}   
+    #content h2 {  letter-spacing: 0.11em; font-size: 2em; }
+    
+    #content a { color: Teal; text-decoration: none; }
+       #content a:hover { color: SlateGray; }
+  #content blockquote { border-left: 0.20em solid LightGray; padding: 1em; background:WhiteSmoke; }
+  
+.portfolio { display: block; width: 95%; background: WhiteSmoke; padding: 2%; border-bottom: 0.02em solid white;
+    transition:All 0.2s ease-in-out; -webkit-transition:All 0.2s ease-in-out; -moz-transition:All 0.2s ease-in-out; -o-transition:All 0.2s ease-in-out; }  
+   .portfolio:hover { background: white; }
+  
+  
+  span.credit { text-align: center; font-size: 0.25em; text-transform: lowercase; display: block; margin-bottom: 10px;
+    font-family:'Fjalla One', Helvetica, sans-serif; font-weight: lighter; letter-spacing: 0.05em; }
+    span.credit a { color: dimgrey; text-decoration: none;}
+      span.credit a:hover { color:DarkCyan; }
+      
+  /* 
+Generic Styling, for Desktops/Laptops 
+*/
+table {  width: 100%;  max-width: 1555px; border-collapse: collapse; margin: 0 auto; }
+td {  padding: 5%;  border: 1px solid white;  text-align: center;  background: WhiteSmoke; }
+    td img a { text-decoration: none; }
+          td img { max-width: 100%; height: auto; }
+    
+         
+@media screen and (max-width: 1152px) 
+/*------ 1152x720 resolution-----*/  
+{ body { font-size: 80%; } } 
+
+@media screen and (max-width: 1024px) 
+/*------ 1024x640 resolution-----*/  
+{ body { font-size: 75%; }    }    
+   
+@media screen and (max-width: 800px) 
+/*------ 800x600 resolution-----*/
+{  body { font-size: 65%; }  
+      #header {font-size: 0.75em; }   
+          ul.navigate {width: 100%;} }
